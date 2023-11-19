@@ -272,3 +272,8 @@ input[type=file]::file-selector-button {
 .headerTable > th {
     color: white;
 }
+
+.grayText{
+    color: #9e9b9b;
+    font-size: 12px;
+}
