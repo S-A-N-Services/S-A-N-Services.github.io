@@ -2,7 +2,7 @@
     let result2 = document.getElementById('result')
 
     document.getElementById('lowForm').addEventListener('click', ()=>{
-    result2.innerHTML = "Low - light safety ridk assessment    - refere to part C. "+ `<br>` + document.getElementById('lowForm').textContent;
+    result2.innerHTML = "Low - light safety risk assessment    - refere to part C. "+ `<br>` + document.getElementById('lowForm').textContent;
     result2.style.cursor = 'pointer';
     result2.addEventListener('click',()=>{
         window.location.href = 'lowForm.html'
