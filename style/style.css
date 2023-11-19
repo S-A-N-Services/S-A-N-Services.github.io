@@ -139,8 +139,8 @@ tr {
 
 .imgWidth {
     width: 20px;
-    height: 25px;
     margin: 1%;
+    margin-bottom: 5px ;
 }
 
 .imgWidth2 {
