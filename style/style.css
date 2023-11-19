@@ -1,6 +1,7 @@
 body {
     margin: auto;
     margin-top: 80px;
+    width: 90%;
 }
 
 .colFlex {
@@ -274,6 +275,7 @@ input[type=file]::file-selector-button {
 }
 
 .grayText{
+
     color: #9e9b9b;
     font-size: 12px;
 }
@@ -315,4 +317,9 @@ input[type=file]::file-selector-button {
 .tableHeader > img{
     height: 80%;
     margin-top: 15px !important;
+}
+
+#contentToPrint{
+    width: 70%;
+    margin: 0 auto;
 }
