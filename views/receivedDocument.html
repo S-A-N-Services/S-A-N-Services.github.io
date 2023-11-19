@@ -13,7 +13,7 @@
         <span onclick="window.location.href = 'main.html'" style="cursor: pointer;">Home</span>
         <span style="cursor: pointer;">File</span>
         <span style="cursor: pointer;">Account</span>
-        <span><img src="../icons/New folder/bell-solid.svg" style="cursor: pointer;" class="imgWidth2" alt=""></span>
+        <span style="position: relative;"><img src="../icons/New folder/bell-solid.svg" style="cursor: pointer;" class="imgWidth2" alt=""><div class="notify"></div></span>
         <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
         <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
     </section>
@@ -35,7 +35,7 @@
         <section style="margin-left: auto;">
         <a href="../SANS-SQE-PMM02-FO21-Initial Safety Impact Assessment Template Rev.B.docx" class="lighBgBtn" >Review</a> 
 
-       <button class="addBtn" onclick="window.location.href = 'createMeeting.html'">Approve</button> 
+       <button class="addBtn" onclick="addNewNotification()">Approve</button> 
     </section>
     
         <svg class="imgWidth2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -47,7 +47,7 @@
         <section style="margin-left: auto;">
             <a href="../SANS-SQE-PMM02-FO21-Initial Safety Impact Assessment Template Rev.B.docx" class="lighBgBtn" >Review</a>  
             
-            <button class="addBtn" onclick="window.location.href = 'createMeeting.html'">Approve</button> 
+            <button class="addBtn" onclick="addNewNotification()">Approve</button> 
         </section>
     </section>
 
@@ -56,5 +56,21 @@
     <footer>
         <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
     </footer>
+    <script>
+        let notificationCount = 1;
+
+        function addNewNotification() {
+        const notifyElement = document.querySelector('.notify');
+        
+        // Set the value of the notification
+        notifyElement.textContent = notificationCount;
+
+        // Display the notification
+        notifyElement.style.display = 'block';
+
+        // Increment the notification count for the next click
+        notificationCount++;
+        }
+    </script>
 </body>
 </html>
