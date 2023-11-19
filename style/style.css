@@ -261,7 +261,13 @@ input[type=file]::file-selector-button {
     border-radius: 50%;
     position: absolute;
     z-index: 999;
+<<<<<<< Updated upstream
     top: -5px;
     right: -5px;
 }
 >>>>>>> f35c58fdc8310bb56df7d49afaeb9da5f1fc8204
+=======
+    top: -4px;
+    right: -4px;
+}
+>>>>>>> Stashed changes
