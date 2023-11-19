@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirement Form</title>
+    <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script> 
+
+</head>
+<body>
+    <section class="header-bar">
+        <span onclick="window.location.href = 'main.html'" style="cursor: pointer;">Home</span>
+        <span style="cursor: pointer;">File</span>
+        <span style="cursor: pointer;">Account</span>
+        <span><img src="../icons/New folder/bell-solid.svg" style="cursor: pointer;" class="imgWidth2" alt=""></span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
+    </section>
+    
+    
+    <section id="tableHeader" style="display: flex; flex-direction: row; margin: auto; width: 50%;">
+        <img src="../img/logo.jpg" width="14%" height="10%" style="border: 1px solid black;" alt="">
+        <section style="width: 100%;"> 
+            <table>
+                <tr>
+                    <th style="width: 100rem; padding: 1%;">Safety Requirement Implementation Plan Form</th>
+                </tr>
+            </table>
+            <table style="width: inherit; border-collapse: collapse;">    
+                <tr>
+                    <td class="cellStyle">Form NO:</td>
+                    <td><p id="formNoRes" class="tableInput"></p></td>
+                    <td class="cellStyle">Revision:</td>
+                    <td><p id="revisionRes" class="tableInput"></p></td>
+                    <td class="cellStyle">Issue Date:</td>
+                    <td><p id="issueDateRes" class="tableInput"></p></td>
+                </tr>
+            </table>
+        </section>
+    </section>
+
+    <h1 style="display: none;">Post_Operational_Review_Form</h1>
+    <section class="rowFlex" style="gap: 10px; margin-top: 1%;">
+        <section id="icons" class="imgSecStyle">
+            <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/magnifying-glass-plus-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/pen-to-square-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/print-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/signature-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/download-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/file-excel-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/file-pdf-solid.svg" class="imgWidth" id="pdf" style="cursor: pointer;">
+        </section>
+        <section style="margin: auto; width: 80%;">
+            <table>
+                <tr class="headerTable whiteColor tablePadd">
+                    <th style="font-size: 15px;">SR reference</th>
+                    <th style="font-size: 15px;">Safety Requirement</th>
+                    <th style="font-size: 15px;">Source (Related Hazard)</th>
+                    <th style="font-size: 15px;">Safety Requirement Owner</th>
+                    <th style="font-size: 15px;">Implementation Lead</th>
+                    <th style="font-size: 15px;">Required Completion Date</th>
+                    <th style="font-size: 15px;">Evidence of Implementation</th>
+                    <th style="font-size: 15px;">Status</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td>
+                        <!-- زر Review -->
+                        <input type="button" value="Review" onclick="openWordDocument()">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                </tr>
+            </table>
+        </section>
+    </section>
+
+    <section id="btns" style="float: right; margin-top: 7%;">
+        <input type="button" value="Cancel" class="cancelBtn" onclick="window.location.href = 'changeSummary.html'">
+        <input type="button" value="Next" id="nextBtn" class="addBtn" onclick="window.location.href = 'signForm.html'">
+    </section>
+
+    <footer>
+        <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
+    </footer>
+    <script>
+        function openWordDocument() {
+            // يمكنك هنا وضع الكود الخاص بفتح مستند Word
+            // على سبيل المثال: window.open('path/to/your/word/document.docx', '_blank');
+        }
+    </script>
+</body>
+</html>

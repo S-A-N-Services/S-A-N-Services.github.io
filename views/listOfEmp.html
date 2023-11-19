@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assign safety impact assessor</title>
+    <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <section class="header-bar">
+        <span onclick="window.location.href = 'main.html'" style="cursor: pointer;">Home</span>
+        <span style="cursor: pointer;">File</span>
+        <span style="cursor: pointer;">Account</span>
+        <span><img src="../icons/New folder/bell-solid.svg" style="cursor: pointer;" class="imgWidth2" alt=""></span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
+    </section>
+    
+    
+        <section style="width: 70%; margin: auto;">
+    <h1 style="color: #3896DA; text-align: center;">Assign Safety Impact Assessor</h1>
+    <section style="display: flex; flex-direction: row; justify-content: space-between; color: #3896DA; font-size: 18px;">
+      <p>List of Employees</p>
+    <p>Filter</p>  
+    </section>
+    <section id="emp_header" style="display: flex; flex-direction: row; justify-content: space-between;">
+        <span style="height: 5%; width: 5%; margin: 0 -10% 0 -1%;"></span>
+        <span>Name</span>
+        <span>Email</span>
+        <span>ID number</span>
+        <span>Invitation</span>
+    </section>
+    <section style="display: flex; flex-direction: column; margin: 3% 1% 0 3%;">
+        <section style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 2%;">
+        <img src="../icons/New folder/circle-solid.svg" style=" border-radius: 50%; margin: -1% -10% 2% -1%;" height="5%" width="5%" >
+        <span style="margin-left: -8%;">Khaled Ahmed</span>
+        <span style="margin-left: -8%;">Khaled@gmail.com</span>
+        <span style="margin-left: -8%;">8036997</span>
+        <span><button class="addBtn" id="selectEmpBtn1" data-employee-name="Khaled Ahmed">Select</button></span>
+</section>
+<section style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 2%;">
+        <img src="../icons/New folder/circle-solid.svg" style=" border-radius: 50%; margin: -1% -10% 2% -1%;" height="5%" width="5%">
+        <span style="margin-left: -8%;">Omar Ahmed</span>
+        <span style="margin-left: -8%;">Khaled@gmail.com</span>
+        <span style="margin-left: -8%;">8036997</span>
+        <span><button class="addBtn" id="selectEmpBtn2" data-employee-name="Omar Ahmed">Select</button></span>
+    </section>
+    </section>
+    <section style="margin: 20% 0 20% 30%; float: right;">
+    <button id="sendRequestBtn" class="addBtn">Send request</button>
+</section>
+</section> 
+<footer>
+    <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
+</footer>
+<script src="../js/functions.js"></script>
+</body>
+</html>

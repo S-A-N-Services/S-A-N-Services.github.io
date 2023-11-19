@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>safety risk</title>
+    <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css"> 
+</head>
+<body>
+    <section class="header-bar">
+        <span onclick="window.location.href = 'main.html'" style="cursor: pointer;">Home</span>
+        <span style="cursor: pointer;">File</span>
+        <span style="cursor: pointer;">Account</span>
+        <span><img src="../icons/New folder/bell-solid.svg" style="cursor: pointer;" class="imgWidth2" alt=""></span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
+    </section>
+    
+    
+    <section id="tableHeader" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 2%;">
+        <img src="../img/logo.jpg" width="6%" height="auto" style="border: 1px solid black; margin-top: 12px;" alt="">
+<section>
+        <p class="headTP sSizeFont">Safety Risk Assessment Report</p>
+    <table class="tableStyle">    
+        <tr>
+            <td class="cellStyle" style="width: 13%;">Form NO:</td>
+            <td style="padding: 0;"><input type="text" name="formNo" id="formNo" class="tableInput" style="font-size: 14px; width:max-content;" value="SANS-SQE-PMM02-FO023"></td>
+            <td class="cellStyle" style="width: 13%;">Revision:</td>
+            <td style="padding: 0;"><input type="text" name="revision" id="revision" style="width: 14%; font-size: 14px;" class="tableInput" value="C"></td>
+            <td class="cellStyle">Issue Date:</td>
+            <td style="padding: 0;"><input type="date" name="issueDate" id="issueDate" class="tableInput" style="font-size: 14px; width:max-content;"></td>
+            </tr>
+    </table>
+</section>
+    </section>
+
+    <section class="rowFlex" style="margin-top: 2%;">
+        <section id="icons" class="imgSecStyle">
+            <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/magnifying-glass-plus-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/pen-to-square-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/print-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/signature-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/download-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/file-excel-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+            <img src="../icons/New folder/file-pdf-solid.svg" class="imgWidth">
+        </section>
+        <table style="width: 80%; margin: auto auto auto 8%;">
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: medium; padding: 1%;">Document Title</th>
+                <th class="headerTable whiteColor"></th>
+            </tr>
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: 15px;">Document Reference</th>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+            </tr>
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: 15px;">Document author</th>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+            </tr>
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: 15px;">Version number</th>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+            </tr>
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: 15px;">Version Date</th>
+                <td><input type="date" name="" id="" class="tableInput"></td>
+            </tr>
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: 15px;">Status</th>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+            </tr>
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: 15px;">notes</th>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+            </tr>
+        </table>
+        </section>
+        <table style="width: 80%; margin: auto;">
+        <tr>
+            <th class="headerTable whiteColor">Version</th>
+            <th class="headerTable whiteColor">Date</th>
+            <th class="headerTable whiteColor">Author</th>
+            <th class="headerTable whiteColor">Change Description</th>
+            <th class="headerTable whiteColor">Reviewed By</th>
+            <th class="headerTable whiteColor">Effictive Date</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="" id="" class="tableInput" value="V1.0"></td>
+            <td><input type="date" name="" id="" class="tableInput"></td>
+            <td><textarea name="" id="" cols="10" rows="4" style="border: none;"></textarea></td>
+            <td><input type="text" name="" id="" value="New" class="tableInput"></td>
+            <td><textarea name="" id="" cols="10" rows="4" style="border: none;"></textarea></td>
+            <td><input type="date" name="" id="" class="tableInput"></td>
+        </tr>
+        </table>
+        <table style="width: 80%; margin: auto;">
+            <tr>
+            <th class="headerTable whiteColor" style="font-size: medium;">Athoried by</th>
+            <th class="headerTable whiteColor"></th>
+            <th class="headerTable whiteColor"></th>
+            <th class="headerTable whiteColor"></th>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+                <td><input type="text" name="" id="" class="tableInput"></td>
+                <td><input type="file" id="fileUpload" style="display: none;" />
+                    <button id="uploadButton">Insert Signature</button></td>
+            </tr>
+            <tr>
+                <th class="headerTable whiteColor" style="font-size: medium;">Reviewed by</th>
+                <th class="headerTable whiteColor"></th>
+                <th class="headerTable whiteColor"></th>
+                <th class="headerTable whiteColor"></th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="file" id="fileUpload1" style="display: none;" />
+                        <button id="uploadButton1">Insert Signature</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="text" name="" id="" class="tableInput"></td>
+                    <td><input type="file" id="fileUpload2" style="display: none;" />
+                        <button id="uploadButton2">Insert Signature</button></td>
+                </tr>
+                <tr>
+                    <th class="headerTable whiteColor" style="font-size: medium;">Risk accepted by</th>
+                    <th class="headerTable whiteColor"></th>
+                    <th class="headerTable whiteColor"></th>
+                    <th class="headerTable whiteColor"></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="" class="tableInput"></td>
+                        <td><input type="text" name="" id="" class="tableInput"></td>
+                        <td><input type="text" name="" id="" class="tableInput"></td>
+                        <td><input type="file" id="fileUpload3" style="display: none;" />
+                            <button id="uploadButton3">Insert Signature</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="" class="tableInput"></td>
+                        <td><input type="text" name="" id="" class="tableInput"></td>
+                        <td><input type="text" name="" id="" class="tableInput"></td>
+                        <td><input type="file" id="fileUpload4" style="display: none;" />
+                            <button id="uploadButton4">Insert Signature</button></td>
+                    </tr>
+                    <tr>
+                        <th class="headerTable whiteColor" style="font-size: medium;">Approved by</th>
+                        <th class="headerTable whiteColor"></th>
+                        <th class="headerTable whiteColor"></th>
+                        <th class="headerTable whiteColor"></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id="" class="tableInput"></td>
+                            <td><input type="text" name="" id="" class="tableInput"></td>
+                            <td><input type="text" name="" id="" class="tableInput"></td>
+                            <td><input type="file" id="fileUpload5" style="display: none;" />
+                                <button id="uploadButton5">Insert Signature</button></td>
+                        </tr>
+                        <tr>
+                            <th class="headerTable whiteColor" style="font-size: medium;">Endorsed by</th>
+                            <th class="headerTable whiteColor"></th>
+                            <th class="headerTable whiteColor"></th>
+                            <th class="headerTable whiteColor"></th>
+                            </tr>
+                            <tr>
+                            <td><input type="text" name="" id="" class="tableInput"></td>
+                            <td><input type="text" name="" id="" class="tableInput"></td>
+                            <td><input type="text" name="" id="" class="tableInput"></td>
+                            <td><input type="file" id="fileUpload6" style="display: none;" />
+                                <button id="uploadButton6">Insert Signature</button></td>
+                            </tr>
+        </table>
+
+        <section id="btns" style="float: right; margin-top: 7%;">
+            <input type="button" value="Back" class="cancleBtn" onclick="window.location.href = 'hazardAnaless.html'">
+            <input type="button" value="Next" id="nextBtn" class="addBtn" onclick="window.location.href = 'GACA.html'">
+            </section>
+    
+            <footer>
+                <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
+            </footer>
+
+            <script src="../js/uploadfile.js"></script>
+</body>
+</html>

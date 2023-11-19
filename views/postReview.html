@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Review</title>
+    <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script> 
+
+</head>
+<body>
+    <section class="header-bar">
+        <span onclick="window.location.href = 'main.html'" style="cursor: pointer;">Home</span>
+        <span style="cursor: pointer;">File</span>
+        <span style="cursor: pointer;">Account</span>
+        <span><img src="../icons/New folder/bell-solid.svg" style="cursor: pointer;" class="imgWidth2" alt=""></span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
+    </section>
+    
+    <section id="tableHeader" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 2%;">
+        <img src="../img/logo.jpg" width="6%" height="auto" style="border: 1px solid black; margin-top: 12px;" alt="">
+<section>
+        <p class="headTP sSizeFont">Post Operational Review Form</p>
+    <table class="tableStyle">    
+        <tr>
+            <td class="cellStyle" style="width: 13%;">Form NO:</td>
+            <td style="padding: 0;"><input type="text" name="formNo" id="formNo" class="tableInput" style="font-size: 14px; width:max-content;" value="SANS-SQE-PMM02-FO026"></td>
+            <td class="cellStyle" style="width: 13%;">Revision:</td>
+            <td style="padding: 0;"><input type="text" name="revision" id="revision" style="width: 14%; font-size: 14px;" class="tableInput" value="B"></td>
+            <td class="cellStyle">Issue Date:</td>
+            <td style="padding: 0;"><input type="date" name="issueDate" id="issueDate" class="tableInput" style="font-size: 14px; width:max-content;"></td>
+            </tr>
+    </table>
+</section>
+    </section>
+    <h1 style="display: none;">Post_Operational_Review_Form</h1>
+    <section class="rowFlex" style="margin-top: 2%;">
+    <section id="icons" class="imgSecStyle" style="margin-right: -15%; margin-left: 15%; height: 50%;">
+        <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/magnifying-glass-plus-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/pen-to-square-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/print-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/signature-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/download-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/file-excel-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+        <img src="../icons/New folder/file-pdf-solid.svg" class="imgWidth" id="pdf" style="cursor: pointer;">
+    </section>
+    <table style="width: 60%; margin: auto;">
+        <tr>
+            <th class="headerTable whiteColor">Reviews (operational & Technical)</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">ISIA/SRA References</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">ISIA/SRA Title</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">Date</th>
+            <td><input type="date" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr class="headerTable whiteColor">
+            <th class="tablePadd">Sefety assessment details</th>
+            <th class="tablePadd"></th>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">Hazard H01</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">consequnces</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">severity/likelihood/risk class</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">Hazard HXX</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">consequnces</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+        <tr>
+            <th class="headerTable whiteColor">severity/likelihood/risk class</th>
+            <td><input type="text" name="" id="" class="tableInput"></td>
+        </tr>
+    </table>
+    </section>
+    <section style="margin-top: 2%;">
+    <table style="width: 60%; margin: auto;">
+        <tr class="headerTable whiteColor">
+            <th class="tablePadd">Effectiveness od controls and mitigations adopted for the change:</th>
+        </tr>
+        <tr>
+        <td>
+            <textarea name="" id="" cols="80" rows="5" style="border: none;"></textarea>
+        </td>
+        </tr>
+        </table>
+        <table style="width: 60%; margin: auto;">
+        <tr class="headerTable whiteColor">
+            <th class="tablePadd">Post operational review finding:</th>
+        </tr>
+        <tr>
+        <td>
+            <textarea name="" id="" cols="80" rows="5" style="border: none;"></textarea>
+        </td>
+        </tr>
+        </table>
+        <table style="width: 60%; margin: auto;">
+        <tr class="headerTable whiteColor">
+            <th class="tablePadd">Safety Requirment</th>
+        </tr>
+        <tr>
+        <td>
+            <textarea name="" id="" cols="80" rows="5" style="border: none;"></textarea>
+        </td>
+        </tr>
+    </table>
+    <table style="width: 60%; margin: auto;">
+        <tr class="headerTable whiteColor">
+            <th class="tablePadd">Correective activity</th>
+            <td class="tablePadd"></td>
+        </tr>
+        <tr>
+            <td>
+                Reviews (operational & Technical)
+            </td>
+        <td>
+            <textarea name="" id="" cols="50" rows="3" style="border: none;"></textarea>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                signature
+            </td>
+        <td>
+            <input type="file" id="fileUpload" style="display: none;" />
+            <button id="uploadButton">Insert Signature</button>
+        </td>
+        </tr>
+    </table>
+</section>
+    <section id="btns" style="float: right; margin-top: 7%;">
+        <input type="button" value="Back" class="cancleBtn" onclick="window.location.href = 'hazardAnaless.html'">
+        <input type="button" value="Next" id="nextBtn" class="addBtn" onclick="window.location.href = 'signForm.html'">
+        </section>
+
+        <footer>
+            <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
+        </footer>
+
+        <script src="../js/uploadfile.js"></script>
+        <script src="../js/exportPdf.js"></script>
+</body>
+</html>
