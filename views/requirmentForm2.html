@@ -21,27 +21,30 @@
         <span><img src="../img/notification.png" style="cursor: pointer;" class="imgWidth2" alt=""></span>
         <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
         <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
-    </section>    
-    <section id="tableHeader" style="display: flex; flex-direction: row; margin: auto; width: 50%;">
-        <img src="../img/logo.jpg" width="14%" height="10%" style="border: 1px solid black;" alt="">
-        <section style="width: 100%;"> 
-            <table>
-                <tr>
-                    <th style="width: 100rem; padding: 1%;">Safety Requirement Implementation Plan Form</th>
-                </tr>
-            </table>
-            <table style="width: inherit; border-collapse: collapse;">    
-                <tr>
-                    <td class="cellStyle">Form NO:</td>
-                    <td><p id="formNoRes" class="tableInput"></p></td>
-                    <td class="cellStyle">Revision:</td>
-                    <td><p id="revisionRes" class="tableInput"></p></td>
-                    <td class="cellStyle">Issue Date:</td>
-                    <td><p id="issueDateRes" class="tableInput"></p></td>
-                </tr>
-            </table>
+    </section>  
+
+    <section id="tableHeader" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 2%;">
+        <section class="flexBox">
+            <img src="../img/logo.jpg" width="6%" height="5%" style="border: 1px solid black; margin-top: 13px;" alt="">
+            <div>
+                <p class="headTP sSizeFont">Safety Requirement Implementation Plan Form</p>
+                <table class="tableStyle">
+                    <tbody>
+                        <tr>
+                            <td class="cellStyle" style="width: 13%;">Form NO:</td>
+                            <td style="padding: 0;"><input type="text" name="formNo" id="formNo" class="tableInput" style="font-size: 14px; width:max-content;" ></td>
+                            <td class="cellStyle" style="width: 13%;">Revision:</td>
+                            <td style="padding: 0;"><input type="text" name="revision" id="revision" style="width: 14%; font-size: 14px;" class="tableInput" ></td>
+                            <td class="cellStyle">Issue Date:</td>
+                            <td style="padding: 0;"><input type="date" name="issueDate" id="issueDate" class="tableInput" style="font-size: 14px; width:max-content;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </section>
         </section>
-    </section>
+    </section> 
+
 
     <h1 style="display: none;">Post_Operational_Review_Form</h1>
     <section class="rowFlex" style="gap: 10px; margin-top: 1%;">
@@ -77,10 +80,6 @@
                     <td><input type="text" name="" id="" class="tableInput"></td>
                     <td><input type="text" name="" id="" class="tableInput"></td>
                     <td><input type="text" name="" id="" class="tableInput"></td>
-                    <td style="padding:0;">
-                        <!-- زر Review -->
-                        <input type="button"  class="addBtn" value="Review" onclick="openWordDocument()">
-                    </td>
                 </tr>
                 <tr>
                     <td><input type="text" name="" id="" class="tableInput"></td>
