@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazard analysis</title>
+    <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script> 
+
+</head>
+<body>
+    <section class="header-bar">
+        <img src="../img/brightness.png" class="darkTheme">
+        <span onclick="window.location.href = 'main.html'" style="cursor: pointer;">Home</span>
+        <span style="cursor: pointer;">File</span>
+        <span style="cursor: pointer;">Account</span>
+        <span><img src="../img/notification.png" style="cursor: pointer;" class="imgWidth2" alt=""></span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
+    </section>
+    <div style="display: flex; align-items: center;">
+        <label class="switch">
+            <input class="switch-input" type="checkbox" />
+            <span class="switch-label" data-on="On" data-off="Off"></span>
+            <span class="switch-handle"></span>
+        </label>
+        <img src="../img/brightness.png" class="darkTheme">
+    </div>
+    
+    
+    <section id="tableHeader" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 2%;">
+        <img src="../img/logo.jpg" width="6%" height="auto" style="border: 1px solid black; margin-top: 12px;" alt="">
+<section>
+        <p class="headTP sSizeFont">Safety Risk Assessment Report</p>
+    <table class="tableStyle">    
+        <tr>
+            <td class="cellStyle" style="width: 13%;">Form NO:</td>
+            <td style="padding: 0;"><input type="text" name="formNo" id="formNo" class="tableInput" style="font-size: 14px; width:max-content;" value="SANS-SQE-PMM02-FO022"></td>
+            <td class="cellStyle" style="width: 13%;">Revision:</td>
+            <td style="padding: 0;"><input type="text" name="revision" id="revision" style="width: 14%; font-size: 14px;" class="tableInput" value="C"></td>
+            <td class="cellStyle">Issue Date:</td>
+            <td style="padding: 0;"><input type="date" name="issueDate" id="issueDate" class="tableInput" style="font-size: 14px; width:max-content;"></td>
+            </tr>
+    </table>
+</section>
+    </section>
+
+    <section style="margin: auto; width: 100%;">
+    <form>
+        <div class="introdution-wrapper main-input-section">
+            <h1 class="ablueColor" style=" font-size: 22px;">1. Introduction</h1>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">1.1 Objectives</h1>
+                <textarea class="customAreaField" name="objectives" id="objectives"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">1.2 Background</h1>
+                <textarea class="customAreaField" name="background" id="background"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">1.3 Scope of Changes</h1>
+                <textarea class="customAreaField" name="scope" id="scope"></textarea>
+            </div>
+        </div>
+        <br><br>
+        <div class="description-wrapper main-input-section">
+            <h1 class="ablueColor" style=" font-size: 22px;">2. &ltService/Project&gt Change Description</h1>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">2.1 Detailed Project Change Description</h1>
+                <textarea class="customAreaField" name="change-desc" id="change-desc"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">2.2 Supporting Documentaion</h1>
+                <textarea class="customAreaField" name="supp-doc" id="supp-docs"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">2.3 Service Context</h1>
+                <p class="text-center">This section details the serveice under assessment and the other services / systems it interface with.</p>
+                <p class="text-center"><b>Table 1 Operational Interface Area for &ltService/Project&gt</b></p>
+                <!-- Table Start -->
+                <div class="long-table-wrapper">
+                    <table class="service-context-table" >
+                        <tr class="headerTable whiteColor">
+                            <th class="tablePadd" style="width: 20%; border-right: 1px solid #000;">Operational Interface</th>
+                            <th class="tablePadd">Rational</th>
+                        </tr>
+                        <tr>
+                            <td>Pilot - Controller Interface</td>
+                            <td><textarea name="pilotControllerInterface" id="pilotControllerInterface" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>    
+                        <tr>  
+                            <td>Controller - Controller</td>
+                            <td><textarea name="controller" id="controller" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Pilot - Pilot</td>
+                            <td><textarea name="pilot" id="pilot" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>    
+                        <tr>  
+                            <td>Controller - Airport Operator</td>
+                            <td><textarea name="controllerAirportOperator" id="controllerAirportOperator" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Controller - CWP</td>
+                            <td><textarea name="CWP" id="CWP" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>    
+                        <tr>  
+                            <td>Pilot - Airspace</td>
+                            <td><textarea name="pilotAirspace" id="pilotAirspace" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Pilot - Taxiway</td>
+                            <td><textarea name="pilotTaxiway" id="pilotTaxiway" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>    
+                        <tr>  
+                            <td>Pilot - Runway</td>
+                            <td><textarea name="pilotRunway" id="pilotRunway" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>    
+                        <tr>  
+                            <td>Pilot – Aircraft</td>
+                            <td><textarea name="pilotAircraft" id="pilotAircraft" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>Aircraft - Airspace</td>
+                            <td><textarea name="airAirspace" id="airAirspace" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>Aircraft - Runway</td>
+                            <td><textarea name="airRunway" id="airRunway" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>Aircraft - Aircraft</td>
+                            <td><textarea name="airAircraft" id="airAircraft" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>Aircraft – Ground Equipment</td>
+                            <td><textarea name="airGroundEquipment" id="airGroundEquipment" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>Ground Equipment - CWP</td>
+                            <td><textarea name="groundEquipmentCWP" id="groundEquipmentCWP" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>ATCO – Work Schedule</td>
+                            <td><textarea name="atcoWorkSchedule" id="atcoWorkSchedule" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>  
+                        <tr>  
+                            <td>ATCO – Work conditions</td>
+                            <td><textarea name="atcoWorkconditions" id="atcoWorkconditions" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>ATCO – Workload</td>
+                            <td><textarea name="atcoWorkload" id="atcoWorkload" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>   
+                        <tr>  
+                            <td>X - Y ....</td>
+                            <td><textarea name="xy" id="xy" cols="20" rows="5" style="border: none;"></textarea></td>
+                        </tr>    
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="safety-risk-wrapper main-input-section">
+            <h1 class="ablueColor" style=" font-size: 22px;">3 Safety Risk Assessment Methodology</h1>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">3.1 General</h1>
+                <textarea class="customAreaField" name="general" id="general"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">3.2 Workshop Summary</h1>
+                <textarea class="customAreaField" name="workshopSummary" id="workshopSummary"></textarea>
+            </div>
+            <div>
+                <!-- Table Start -->
+                <div class="long-table-wrapper">
+                    <p class="text-center">An Operational Safety Risk Assessment Workshop was conducted on XX/XX/XXX. The workshop was attended by personnel included in the table below.</p>
+                    <table class="service-context-table" >
+                        <tr class="headerTable whiteColor">
+                            <th class="tablePadd" style=" border-right: 1px solid #000;">Name</th>
+                            <th class="tablePadd" style="width: 40%; border-right: 1px solid #000;">Organization / Role</th>
+                            <th class="tablePadd" style="width: 40%;">Email</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  name="name1" id="name1"  style="border: none;"></input></td>
+                            <td><input type="text"  name="role1" id="role1"  style="border: none;"></input></td>
+                            <td><input type="email" name="email1" id="email1"  style="border: none;"></input></td>
+                        </tr>    
+                        <tr>  
+                            <td><input type="text"  name="name2" id="name2"  style="border: none;"></input></td>
+                            <td><input type="email" name="email2" id="email2"  style="border: none;"></input></td>
+                            <td><input type="email" name="email2" id="email2"  style="border: none;"></input></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  name="name3" id="name3"  style="border: none;"></input></td>
+                            <td><input type="text"  name="rol3" id="rol3"  style="border: none;"></input></td>
+                            <td><input type="email" name="email3" id="email3" style="border: none;"></input></td>
+                        </tr>      
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="safety-risk-ass-wrapper main-input-section">
+            <h1 class="ablueColor" style=" font-size: 22px;">4. Safety Risk Assessment</h1>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">4.1 Introduction</h1>
+                <textarea class="customAreaField" name="saftyIntroduction" id="saftyIntroduction"></textarea>
+            </div>
+        </div>
+        <div class="caveats-wrapper">
+            <h1 class="ablueColor" style=" font-size: 22px;">6. Caveats</h1>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">6.1 Outstanding Safety Requirements </h1>
+                <textarea class="customAreaField" name="safetyRequirements" id="safetyRequirements"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">6.2 Assumptions</h1>
+                <textarea class="customAreaField" name="safetyAssumptions" id="safetyAssumptions"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">6.3 Shortcomings</h1>
+                <textarea class="customAreaField" name="safetyShortcomings" id="safetyShortcomings"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">6.4 Limitations</h1>
+                <textarea class="customAreaField" name="safetyLimitations" id="safetyLimitations"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">6.5 Recommendations</h1>
+                <textarea class="customAreaField" name="safetyRecommendations" id="safetyRecommendations"></textarea>
+            </div>
+        </div>
+        <div class="conclusions-wrapper main-input-section">
+            <h1 class="ablueColor" style=" font-size: 22px;">7. Conclusions</h1>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">7.1 Risk Assessment Summary</h1>
+                <textarea class="customAreaField" name="conclusionsRiskAssessment" id="conclusionsRiskAssessment"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">7.2 Risk Acceptance</h1>
+                <textarea class="customAreaField" name="conclusionsRiskAcceptance" id="conclusionsRiskAcceptance"></textarea>
+            </div>
+            <div>
+                <h1 class="ablueColor" style=" font-size: 18px;">7.3 Safety Performance Monitoring</h1>
+                <textarea class="customAreaField" name="conclusionsSafetyPerformance" id="conclusionsSafetyPerformance"></textarea>
+            </div>
+        </div>
+    </form>
+    
+    <section id="btns" style="float: right; margin-top: 7%;">
+        <button class="cancleBtn" onclick="window.location.href='changeCreteria.html'">Back</button>
+        <button class="addBtn" onclick="window.location.href='hazardAnaless.html'">Next</button>
+    </section>
+
+    <footer>
+        <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
+    </footer>
+
+    <script src="../js/hazard.js"></script>
+    <script src="../js/exportPdf.js"></script>
+</body>
+</html>
