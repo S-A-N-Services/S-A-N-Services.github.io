@@ -180,6 +180,16 @@ tr {
     row-gap: 20%;
 }
 
+
+.info.srips {
+    margin-top: 10px;
+    display: grid;
+    padding-left: 30px;
+    grid-template-columns: 15% 18% 63% 60%;
+    column-gap: 2%;
+    row-gap: 20%;
+}
+
 #emp_header {
     /* display: flex;
     flex-direction: row;

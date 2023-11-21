@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>received changes</title>
+    <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body style="width: 90%; ">
+    <section class="header-bar">
+        <img src="../img/brightness.png" class="darkTheme">
+        <span onclick="window.location.href = 'main.html'" style="cursor: pointer;">Home</span>
+        <span style="cursor: pointer;">File</span>
+        <span style="cursor: pointer;">Account</span>
+        <span style="position: relative;"><img src="../img/notification.png" style="cursor: pointer;" class="imgWidth2" alt=""><div class="notify"></div></span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Sign up</span>
+        <span style="cursor: pointer;" onclick="window.location.href = 'login.html'">Log out</span>
+    </section>
+    <p class="grayText"><b>SRIPs</b></p>
+    <h1 class="darkerBlueColor" style="text-align: center;">SRIPs</h1>
+    <section id="header">
+        <span>Change ID</span>
+        <span>Date</span>
+    </section>
+    <section class="info srips">
+        <span>Khaled Ahmed</span>
+        <span>22/9/2023</span>
+        <section style="margin-left: auto;">
+        <a href="../SANS-SQE-PMM02-FO21-Initial Safety Impact Assessment Template Rev.B.docx" class="lighBgBtn" >Review Assessment</a> 
+
+       <button class="addBtn" onclick="addNewNotification()">Prepare SRIPs</button> 
+    </section>
+    <section class="info srips"></section>
+        <span>Sara Omar</span>
+        <span>22/9/2023</span>
+        <section style="margin-left: auto;">
+            <a href="../SANS-SQE-PMM02-FO21-Initial Safety Impact Assessment Template Rev.B.docx" class="lighBgBtn" >Review Assessment</a>  
+            
+            <button class="addBtn" onclick="addNewNotification()">Prepare SRIPs</button> 
+        </section>
+    </section>
+
+    <button class="cancleBtn" style="margin: 20% 0 20% 30%; float: right;" onclick="window.location.href = 'main.html'">Back</button>
+
+    <footer>
+        <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
+    </footer>
+    <script>
+        let notificationCount = 1;
+
+        function addNewNotification() {
+        const notifyElement = document.querySelector('.notify');
+        
+        // Set the value of the notification
+        notifyElement.textContent = notificationCount;
+
+        // Display the notification
+        notifyElement.style.display = 'block';
+
+        // Increment the notification count for the next click
+        notificationCount++;
+        }
+    </script>
+</body>
+</html>
