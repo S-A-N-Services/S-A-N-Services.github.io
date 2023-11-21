@@ -537,6 +537,8 @@ async function downloadWordFile(fileName) {
         link.download = `${fileName}.doc`;
         link.click();
         URL.revokeObjectURL(link.href);
+        window.location.href = '../views/GACA.html';
+
     } catch (error) {
         console.error('Error generating Word file:', error);
     }
