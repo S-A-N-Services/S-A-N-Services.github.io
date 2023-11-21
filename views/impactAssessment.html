@@ -51,7 +51,7 @@
         <h1 style="display: none;">safety_impact_assessment</h1>
             <section class="rowFlex" style="gap: 10px; margin-left: -10px;">
 
-                <section id="icons" class="imgSecStyle" style="height: 50%;">
+                <section id="icons" class="imgSecStyle" style="height: 50%; ">
                     <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
                     <img src="../icons/New folder/zoom.jpeg" class="imgWidth">
                     <img src="../icons/New folder/edit.jpeg" class="imgWidth">
@@ -63,7 +63,7 @@
                     <img src="../icons/New folder/pdf.jpeg" class="imgWidth" id="pdf" style="cursor: pointer;">
                 </section>
 
-            <table class="tableStyle" style="width: 70%;">
+            <table class="tableStyle" style="width: 100%;">
                 <tr class="headerTable whiteColor">
                     <th class="tablePadd" style="width: 50%;">Proposed Changes</th>
                     <th class="tablePadd">Yes/No</th>
@@ -161,15 +161,27 @@
             </table>
             </section>
 
-            <section>
-                <table class="tableStyle tablePadd" style="width: 71%; margin-left: 22px;">
+            <section class="rowFlex" style="gap: 10px; margin-left: -10px;">
+                <section id="icons" class="imgSecStyle" style="height: 50%; visibility: hidden;">
+                    <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+                    <img src="../icons/New folder/zoom.jpeg" class="imgWidth">
+                    <img src="../icons/New folder/edit.jpeg" class="imgWidth">
+                    <img src="../icons/New folder/print.jpeg" class="imgWidth">
+                    <img src="../icons/New folder/sig.jpeg" class="imgWidth">
+                    <img src="../icons/New folder/save.jpeg" class="imgWidth">
+                    <img src="../icons/New folder/file-excel-solid.svg" class="imgWidth">
+                    <img src="../icons/New folder/file-export-solid.svg" class="imgWidth">
+                    <img src="../icons/New folder/pdf.jpeg" class="imgWidth" id="pdf" style="cursor: pointer;">
+                </section>
+                
+                <table class="tableStyle tablePadd" style="width: 100%;">
                     <tr class="headerTable whiteColor" style="border-collapse: collapse;">
-                       <th class="tablePadd"></th>
+                       <th class="tablePadd" style="height: 10px;"></th>
                        <th class="tablePadd"></th>
                     </tr>
                     <tr>
-                        <td style="width: 70%;">Based on the above, is there a safety impact as a result of this change?</td>
-                        <td class="tablePadd" id="assessment9">No</td>
+                        <td style="width: 70%; height: fit-content;">Based on the above, is there a safety impact as a result of this change?</td>
+                        <td class="tablePadd" style="width: 70%; height: fit-content;" id="assessment9">No</td>
                     </tr>
                 </table>
             </section>
