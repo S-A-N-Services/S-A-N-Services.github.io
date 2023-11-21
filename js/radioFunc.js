@@ -13,7 +13,7 @@ document.getElementById('medForm').addEventListener('click', ()=>{
     result.innerHTML = "Meduim - safety risk assessment." + `<br>` + document.getElementById('medForm').textContent
     result.style.cursor = 'pointer';
     result.addEventListener('click',()=>{
-        window.location.href = 'hazardAnaless.html'
+        window.location.href = 'introduction.html'
     })
     sessionStorage.setItem('meduimFormText',document.getElementById('medForm').textContent)
 })
