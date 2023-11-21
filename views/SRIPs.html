@@ -30,7 +30,7 @@
         <section style="margin-left: auto;">
         <a href="../SANS-SQE-PMM02-FO21-Initial Safety Impact Assessment Template Rev.B.docx" class="lighBgBtn" >Review Assessment</a> 
 
-       <button class="addBtn" onclick="addNewNotification()">Prepare SRIPs</button> 
+       <button class="addBtn" onclick="window.location.href = 'changeReq2.html'">Prepare SRIPs</button> 
     </section>
     <section class="info srips"></section>
         <span>Sara Omar</span>
@@ -38,7 +38,7 @@
         <section style="margin-left: auto;">
             <a href="../SANS-SQE-PMM02-FO21-Initial Safety Impact Assessment Template Rev.B.docx" class="lighBgBtn" >Review Assessment</a>  
             
-            <button class="addBtn" onclick="addNewNotification()">Prepare SRIPs</button> 
+            <button class="addBtn" onclick="window.location.href = 'changeReq2.html'">Prepare SRIPs</button> 
         </section>
     </section>
 
@@ -47,21 +47,6 @@
     <footer>
         <img src="../img/footer.png" width="100%" style="margin: 10% 0 0 0; height: 50%;">
     </footer>
-    <script>
-        let notificationCount = 1;
 
-        function addNewNotification() {
-        const notifyElement = document.querySelector('.notify');
-        
-        // Set the value of the notification
-        notifyElement.textContent = notificationCount;
-
-        // Display the notification
-        notifyElement.style.display = 'block';
-
-        // Increment the notification count for the next click
-        notificationCount++;
-        }
-    </script>
 </body>
 </html>
