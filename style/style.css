@@ -334,3 +334,42 @@ input[type=file]::file-selector-button {
     width: 70%;
     margin: 0 auto;
 }
+
+.customAreaField {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 90px;
+    resize: none;
+}
+
+.main-input-section{
+    margin: 40px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.service-context-table{
+    width: 100%;
+    max-height: 40px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.service-context-table td{
+    text-align: center;
+    font-weight: 700;
+    padding: 4px;
+    min-height: 400px;
+}
+
+.service-context-table textarea,
+.service-context-table input{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
